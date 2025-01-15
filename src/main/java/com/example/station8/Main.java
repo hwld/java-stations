@@ -2,15 +2,39 @@ package com.example.station8;
 
 public class Main {
     public static void question1(int subtotal) {
-        // Station 8 問題(1)
-        // ここから
-        // ここまで
+        int total = 0;
+        if (subtotal < 10000) {
+            System.out.println("送料800円を追加します");
+            total = subtotal + 800;
+        } else {
+            total = subtotal;
+        }
+
+        System.out.println(total);
     }
 
     public static void question2(int categoryId) {
-        // Station 8 問題(2)
-        // ここから
-        // ここまで
+        switch (categoryId) {
+            case 1: {
+                System.out.println("食品");
+                break;
+            }
+            case 2: {
+                System.out.println("家電");
+                break;
+            }
+            case 3: {
+                System.out.println("家具");
+                break;
+            }
+            case 99: {
+                System.out.println("その他");
+                break;
+            }
+            default: {
+                break;
+            }
+        }
     }
 
     public static void main(String[] args) {
